@@ -1,0 +1,40 @@
+
+
+import turtle
+
+t=turtle.Turtle ()
+
+X=-200
+
+y=200
+
+size=50
+
+for i in range (8):
+
+    for j in range (8):
+         if (i+j)%2==0:
+
+            t.fillcolor ("white")
+ 
+         else:
+
+            t.fillcolor ("black")
+ 
+         t.penup()
+
+         t.goto(X+i*size,y-j*size)
+ 
+         t.pendown()
+ 
+         t.begin_fill()
+
+         for k in range (4):
+
+             t. forward (size)
+      
+             t.right (90)
+
+         t.end_fill()
+
+turtle.done()
